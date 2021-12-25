@@ -16,14 +16,14 @@ public class allLocaters {
 		driver.findElement(By.id("mobile_number")).sendKeys("9604404393");
 		driver.findElement(By.id("term-condit")).click();                   //id
 		driver.findElement(By.linkText("Get Verification Code")).click();   //linktext
+		//driver.findElement(By.xpath("//a[normalize-space()='Login using Password']")).click();
 		
 		
-		
-		//driver.findElement(By.cssSelector("//a[@style='user-select: auto;']")).click();
+		//driver.findElement(By.cssSelector(".login-pass.text-camel")).click();
 	
-		//driver.findElement(By.className("login-pass")).click();
+		//driver.findElement(By.className("login-passtext-camel")).click();
 		
-		//driver.findElement(By.linkText("Login Using Password")).click();
+		//driver.findElement(By.linkText("Login using Password")).click();
 
 		//driver.findElement(By.xpath("//*[@id=\"form-validate\"]/div[4]/div[1]/a[1]")).click();
 		
