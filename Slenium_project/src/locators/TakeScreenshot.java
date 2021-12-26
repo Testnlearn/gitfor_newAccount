@@ -19,14 +19,14 @@ public class TakeScreenshot {
 	
     WebDriver driver =new ChromeDriver();
       driver.manage().window().maximize();
-      driver.manage().deleteAllCookies();
+      driver.manage().deleteAllCookies();  // to delete the browser cookies
       
       driver.get("http://rehandel.com/");
       
       
-      File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+      File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); //getting screenshot
        
-		Files.copy(src,new File("/home/codilar/Screenshotfromselenium/screenshot2.png"));
+		Files.copy(src,new File("/home/codilar/Screenshotfromselenium/screenshot2.png")); //here we have paste it on folder
 
 }
 }
