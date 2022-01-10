@@ -16,8 +16,10 @@ public class Homepage_RH {
 			driver.findElement(By.className("user-logins")).click();  //classname
 			Thread.sleep(3000);
 			driver.findElement(By.id("mobile_number")).sendKeys("9604404393");
-			driver.findElement(By.id("term-condit")).click();                   //id
+			driver.findElement(By.id("term-condit")).click();//id
+			System.out.println(driver.findElement(By.id("term-condit")).isSelected());  //verying if checkbox selected or not
 			driver.findElement(By.linkText("Get Verification Code")).click();   //linktext
+			driver.findElement(By.xpath("//a[contains(text(),'Login using Password')]")).click();
 			//driver.findElement(By.xpath("//a[normalize-space()='Login using Password']")).click();
 			
 			
@@ -29,12 +31,6 @@ public class Homepage_RH {
 
 			//driver.findElement(By.xpath("//*[@id=\"form-validate\"]/div[4]/div[1]/a[1]")).click();
 			
-			
-			
-			
-			
-
-
 
 
 	}

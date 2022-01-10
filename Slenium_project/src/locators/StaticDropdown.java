@@ -4,12 +4,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.support.ui.Select;
 
 public class StaticDropdown {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		System.setProperty("ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY", "true");
 		System.setProperty("webdriver.chrome.driver", "/home/codilar/seleniumSetup/chromedriver");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
@@ -19,8 +21,7 @@ public class StaticDropdown {
 		dropdown.selectByIndex(2);
 		dropdown.selectByValue("USD");
 		dropdown.selectByVisibleText("INR");
-		
-
+        driver.quit();
 	}
 
 }

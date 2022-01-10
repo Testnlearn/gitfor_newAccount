@@ -13,10 +13,10 @@ public class Checkbox {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		driver.manage().window().maximize();
-		/*driver.findElement(By.id("checkBoxOption1")).click();   //checkbox selected 
+		driver.findElement(By.id("checkBoxOption1")).click();   //checkbox selected 
 		System.out.println(driver.findElement(By.id("checkBoxOption1")).isSelected()); //verified if seleceted
 		driver.findElement(By.id("checkBoxOption1")).click();                            //deselected checkbox
-		System.out.println(driver.findElement(By.id("checkBoxOption1")).isSelected());  //verified if desleceted  */
+		System.out.println(driver.findElement(By.id("checkBoxOption1")).isSelected());  //verified if desleceted  
 
 		System.out.println(driver.findElements(By.cssSelector("input[type='checkbox']")).size()); //getting count of checkboxes here
 
